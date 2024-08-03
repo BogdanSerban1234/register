@@ -147,7 +147,9 @@ public class RegisterUI {
                 + " Stock left: " + Register.currentItem.stock);
 
     }
-
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(RegisterUI::new);
+    }
     
 
     public static void nextItem() {
