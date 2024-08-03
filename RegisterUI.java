@@ -148,9 +148,7 @@ public class RegisterUI {
 
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(RegisterUI::new);
-    }
+    
 
     public static void nextItem() {
         if (new Random().nextInt(100) > 75) {
