@@ -75,17 +75,17 @@ class TimeLabel {
                     ui.payButton.setEnabled(true);
                 }
                 /** adaugam un nou item pentru urmatoarea zii */
-                if (isBreak && !addedItem) {
-                    addedItem = true;
-                    int i = new Random().nextInt(itemNames.size() - 1);
+                //if (isBreak && !addedItem) {
+                    //addedItem = true;
+                    //int i = new Random().nextInt(itemNames.size() - 1);
 
-                    double price = Double.parseDouble(String.format("%.2f", new Random().nextDouble() * 100));
+                    //double price = Double.parseDouble(String.format("%.2f", new Random().nextDouble() * 100));
 
-                    Register.items.put(Register.itemnr,
-                            new Item(price, (1 + Register.itemnr) + " " + itemNames.get(i), new Random().nextInt(30)));
-                    itemNames.remove(i);
-                    Register.itemnr++;
-                }
+                    //Register.items.put(Register.itemnr,
+                            //new Item(price, (1 + Register.itemnr) + " " + itemNames.get(i), new Random().nextInt(30)));
+                    //itemNames.remove(i);
+                    //Register.itemnr++;
+                //}
             }
         });
         timer.start();
