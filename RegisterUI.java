@@ -162,7 +162,7 @@ public class RegisterUI {
         Register.items.put(4, new Item(50.99, "5 Meds", 30));
         Register.sumPut = 0.0;
         Register.money = 0.0;
-        Register.currentItem = items.get(0);
+        Register.currentItem = Register.items.get(0);
         Register.itemnr = 5;
 
     }
