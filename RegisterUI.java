@@ -148,10 +148,24 @@ public class RegisterUI {
 
     }
     public static void main(String[] args) {
+        init();
         SwingUtilities.invokeLater(RegisterUI::new);
     }
     
+    private static void init() {
+        /** Punem valori variabilelor cand este chemata funcitia */
 
+        Register.items.put(0, new Item(10.99, "1 Lays Chips", 30));
+        Register.items.put(1, new Item(549.99, "2 TV", 5));
+        Register.items.put(2, new Item(1500, "3 Dacia car", 1));
+        Register.items.put(3, new Item(24.57, "4 Paper", 24));
+        Register.items.put(4, new Item(50.99, "5 Meds", 30));
+        Register.sumPut = 0.0;
+        Register.money = 0.0;
+        Register.currentItem = items.get(0);
+        Register.itemnr = 5;
+
+    }
     public static void nextItem() {
         if (new Random().nextInt(100) > 75) {
             personNames.add("Gigel");
